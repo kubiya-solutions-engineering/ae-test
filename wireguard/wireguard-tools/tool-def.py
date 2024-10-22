@@ -43,7 +43,7 @@ wireguard_update_tool = Tool(
             default = "dev",
         ),
     ],
-    secrets=["TOOLS_GH_TOKEN", "GH_TOKEN"],
+    secrets=[],
     env=["AWS_PROFILE"],
     content="""
 pip install boto3 > /dev/null 2>&1
